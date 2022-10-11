@@ -40,7 +40,7 @@ public class Main {
                 (response.getEntity()
                         .getContent(), new TypeReference<>() {});
         posts.stream()
-                .filter(w -> w.getUpvotes() == null)
+                .filter(w -> w.getVotes() == null)
                 .forEach(System.out::println);
 
     }

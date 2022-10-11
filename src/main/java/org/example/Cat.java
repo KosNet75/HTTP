@@ -7,7 +7,7 @@ public class Cat {
     private final String text;
     private final String type;
     private final String user;
-    private final String upvotes;
+    private final String votes;
 
     public Cat(
             @JsonProperty("id") String id,
@@ -19,7 +19,7 @@ public class Cat {
         this.text = text;
         this.type = type;
         this.user = user;
-        this.upvotes = upvotes;
+        this.votes = upvotes;
     }
 
     public String getId() {
@@ -38,8 +38,8 @@ public class Cat {
         return user;
     }
 
-    public String getUpvotes() {
-        return upvotes;
+    public String getVotes() {
+        return votes;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Cat {
                 ", text='" + text + '\'' +
                 ", type='" + type + '\'' +
                 ", user='" + user + '\'' +
-                ", upvotes=" + upvotes +
+                ", upvotes=" + votes +
                 '}' + '\n';
     }
 }
